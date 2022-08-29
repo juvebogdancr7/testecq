@@ -8,15 +8,16 @@
 #include <string.h>
 #include <unistd.h>
 #include <errno.h>
-
-#include <openssl/bn.h>
-#include <openssl/bio.h>
-#include <openssl/ecdh.h>
-#include <openssl/objects.h>
-#include <openssl/rand.h>
-#include <openssl/ec.h>
-#include <openssl/pem.h>
-#include <openssl/evp.h>
+#include <wolfssl/options.h>
+#include <wolfssl/openssl/ssl.h>
+#include <wolfssl/openssl/ec.h>
+#include <wolfssl/openssl/bn.h>
+#include <wolfssl/openssl/bio.h>
+#include <wolfssl/openssl/ecdh.h>
+#include <wolfssl/openssl/objects.h>
+#include <wolfssl/openssl/rand.h>
+#include <wolfssl/openssl/pem.h>
+#include <wolfssl/openssl/evp.h>
 
 struct ecqv_gen_t {
 	BN_CTX *ctx;
